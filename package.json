@@ -1,0 +1,18 @@
+{
+  "name": "@537/es",
+  "version": "0.0.0",
+  "description": "es adapter",
+  "main": "es.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "./node_modules/./.bin/eslint es.js"
+  },
+  "author": "kiernan <hi@537.io> (https://537.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "elasticsearch": "^14.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  }
+}
