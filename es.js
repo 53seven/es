@@ -5,7 +5,7 @@ let config;
 if (process.env.ELASTICSEARCH_URL) {
   const params = url.parse(process.env.ELASTICSEARCH_URL);
   config = {
-    host: params.host,
+    host: `${params.protocol}//${params.host}`,
     httpAuth: params.auth
   };
 }
